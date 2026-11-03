@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - run: BRIDGE_ADMIN_TOKEN=ci-token BRIDGE_SECRET=ci-secret pytest -q
+      - run: PYTHONPATH=. BRIDGE_ADMIN_TOKEN=ci-token BRIDGE_SECRET=ci-secret pytest -q
